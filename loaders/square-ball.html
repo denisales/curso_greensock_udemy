@@ -34,15 +34,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
     <script>
         const squareBall = document.querySelector('.square-ball');
+        const tl = new TimelineMax()
 
         TweenMax.to(squareBall, 1, {
             rotation: '360deg',
             borderRadius: '50%',
+            scale: .7,
             repeat: -1,
-            repeatDelay: .5,
             yoyo: true,
-            scale: .7
-        });
+            repeatDelay: .5
+        })
     </script>
 </body>
 </html>
